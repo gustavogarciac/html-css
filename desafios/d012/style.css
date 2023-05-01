@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: cursive;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+
+header h1 {
+    font-family: 'Titan One', cursive;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.473);
+    font-size: 3em;
+}
+
+main {
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.562);
+}
+
+.destaque {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.poesiasimples {
+    background-color: white;
+    font-size: 1.5em;
+    font-style: italic;
+    padding: 40px 10px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+#flor {
+    background-image: url('background001.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+div#flor p {
+    background-color: rgba(0, 0, 0, 0.452);
+    color: white;
+    width: 300px;
+    line-height: 1.6em;
+    font-weight: 600;
+    font-size: 1.4em;
+    padding-left: 5%;
+}

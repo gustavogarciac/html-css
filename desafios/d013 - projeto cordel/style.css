@@ -33,6 +33,7 @@ header h2 {
     background-image: url('imagens/background001.jpg');
     background-position: center center;
     background-size: center;
+    background-attachment: fixed;
     width: 100%;
 }
 
@@ -51,6 +52,7 @@ header h2 {
     background-image: url('imagens/background002.jpg');
     background-position: center center;
     background-size: center;
+    background-attachment: fixed;
     width: 100%;
 }
 

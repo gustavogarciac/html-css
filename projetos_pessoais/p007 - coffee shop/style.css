@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.439), rgba(0, 0, 0, 0.681)), url('imagens/background-hero03.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    letter-spacing: -1px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EACEAF;
+    padding: 1.5%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.logo img {
+    width: 5em;
+}
+
+.logo h1 {
+    color: #351d03;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #351d03;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+nav ul li a:hover {
+    color: #ad9983;
+    transition: .5s;
+}
+
+#sidebar {
+    border: transparent;
+    background-color: #351d03;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+#sidebar:hover {
+    scale: 1.2;
+    transition: .5s;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #E6AA68;
+    font-size: 1.15em;
+}
+
+/* HERO SECTION */
+.hero {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    padding: 5%;
+    gap: 20px;
+}
+
+.hero h1 {
+    font-size: 5.2em;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    line-height: 70px;
+}
+
+.hero p {
+    font-size: 1.4em;
+}
+
+.hero button {
+    border: transparent;
+    background-color: #E6AA68;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+}
+
+.hero button:hover {
+    cursor: pointer;
+    scale: 1.2;
+    transition: .5s;
+}
+
+.hero button a {
+    text-decoration: none;
+    color: #351d03;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* ABOUT US */
+
+section.informativo {
+    background-color: #E6AA68;
+    padding: 2.5em;
+}
+
+section.informativo h1.heading {
+    color: #351d03;
+    font-size: 3.5em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+div.about {
+    display: flex;
+}
+
+div.image {
+    width: 50vw;
+    height: 600px;
+    background-color: red;
+    background-image: url('imagens/sobrenos2.jpg');
+    background-position: left;
+    background-size: cover;
+}
+
+div.content {
+    width: 50vw;
+    color: white;
+    background-color: #664B2E;
+    padding: 2em;
+}
+
+div.content h1 {
+    font-size: 2.8em;
+}
+
+div.content p {
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+div.content button {
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.225);
+    background-color: #EACEAF;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+div.content button:hover {
+    scale: 1.1;
+    transition: .5s;
+}
+
+div.content button a {
+    text-decoration: none;
+    color: #351d03;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+
+
+
+@media(max-width: 850px) {
+    #sidebar {
+        display: none;
+    }
+    #separador_sobre_nos {
+        flex-direction: column;
+    }
+    div.about {
+        flex-direction: column;
+    }
+    div.image, div.content {
+        width: 85vw;
+    }
+}
+
+@media(max-width: 700px) {
+    nav {
+        display: none;
+    }
+}

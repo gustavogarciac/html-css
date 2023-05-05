@@ -126,9 +126,9 @@ section.informativo {
 
 section.informativo h1.heading {
     color: #351d03;
-    font-size: 3.5em;
+    font-size: 2.75em;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 2em;
 }
 
 div.about {
@@ -188,6 +188,13 @@ div.content button a {
     width: 100%;
 }
 
+section.catalogo h1.heading {
+    color: #351d03;
+    font-size: 2.75em;
+    text-align: center;
+    padding: 2em;
+}
+
 div.catalogo {
     display: flex;
     align-items: center;
@@ -206,6 +213,8 @@ div.item {
     justify-content: center;
     align-items: center;
     width: 31.5%;
+    gap: 10px;
+    margin-bottom: 70px;
 }
 
 div.item img {
@@ -215,7 +224,69 @@ div.item img {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.787);
 }
 
+.item h1 {
+    font-weight: bolder;
+    font-size: 1.25em;
+}
 
+.ac_price {
+    font-size: 1.6em;
+    display: inline;
+}
+
+div.item div#stars i {
+    font-size: 1.1em;
+    color: #E6AA68;
+}
+
+
+/* REVIEWS */
+section#reviews {
+    background-color: #E6AA68;
+}
+
+section#reviews h1.heading {
+    padding: 2em;
+    text-align: center;
+    font-size: 2.75em;
+    color: #351d03;
+}
+div.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+div.avaliacao {
+    background-color: #664B2E;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 31.5%;
+    margin-bottom: 70px;
+}
+
+div.avaliacao p {
+    color: white;
+    font-style: italic;
+}
+
+div.avaliacao div#stars {
+    font-size: 0.85em;
+    color: white;
+}
+
+div.avaliacao img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+/* RESPONSIVITY */
 @media(max-width: 850px) {
     #sidebar {
         display: none;
@@ -235,6 +306,14 @@ div.item img {
     div.item {
         width: 90vw;
         padding: 15% 10%;
+    }
+    div.reviews {
+        flex-direction: column;
+    }
+    div.avaliacao {
+        width: 90vw;
+        padding: 15% 10%;
+        margin-bottom: 30px;
     }
 }
 

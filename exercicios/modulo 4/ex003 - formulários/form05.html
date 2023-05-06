@@ -5,9 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body {
+            background-color: rgb(112, 114, 164);
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
     <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sx" id="isxmasc" checked> <label for="isxmasc">Masculino</label>
+            <input type="radio" name="sx" id="isxfem"> <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> Futebol <br>
+            <input type="checkbox" name="esmusc" id="iesmusc"> Musculação <br>
+            <input type="checkbox" name="esnat" id="iesnat"> Natação <br>
+            <input type="checkbox" name="esart" id="iesart"> Artes Marciais <br>
+            <input type="checkbox" name="escic" id="iescic"> Ciclismo <br>
+            <input type="checkbox" name="esgin" id="iesgin"> Ginástica <br>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">

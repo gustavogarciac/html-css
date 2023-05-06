@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <h1>Praticando Output.</h1>
+    <p>
+        <label for="n1">Número 1:</label>
+        <input type="number" name="n1" id="n1" required min="0" max="50" oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+    </p>
+    <p>
+        <label for="n2">Número 2:</label>
+        <input type="number" name="n2" id="n2" required min="0" max="50" oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+    </p>
+    <p>
+        <label for="soma">Soma: </label>
+        <output id="soma" name="soma">0</output>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    <hr>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="num">Número: </label>
+            <input type="range" name="num" id="num" min="0" max="10" value="5" oninput="val.innerHTML = Number(num.value)">
+            <output id="val">5</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <br>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="ano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="ano" min="1900" max="2023" required value="2000" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="idade">Sua idade é: </label>
+            <output id="idade">0</output>
+        </p>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(ano.value)
+        }
+    </script>
+</body>
+</html>

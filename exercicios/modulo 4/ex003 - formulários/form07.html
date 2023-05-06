@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: black;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body h1 {
+            color: orange;
+            font-weight: bolder;
+            font-size: 2.5em;
+            width: fit-content;
+        }
+        form {
+            background-color: rgb(172, 171, 148);
+            width: fit-content;
+            padding: 2em;
+        }
+        fieldset {
+            border: 2px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fale Conosco!</h1>
+    <form>
+        <fieldset>
+            <legend>Dados para contato:</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" maxlength="15" required placeholder="Seu nome completo...">
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required placeholder="exemplo@email.com">
+            </p>
+            <p>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" required placeholder="(DDD) XXXXX-XXXX">
+            </p>
+            <p>
+                <label for="mensagem">Digite abaixo sua mensagem:</label><br>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

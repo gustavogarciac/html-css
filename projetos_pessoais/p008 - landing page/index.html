@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Landing Page</h1>
+        <nav id="itens">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li class="action_button"><a href="#">Já tem uma conta?</a></li>
+            </ul>
+        </nav>
+        <span class="material-icons" onclick="clickMenu()">
+            menu
+            </span>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="registro">
+                <h1><span class="destaque">Inscreva-se agora</span> <br> na Newslatter</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero officia provident iure cupiditate quo a earum repudiandae repellat delectus quam! Quis, non officia temporibus culpa praesentium illo vel sint nostrum.</p>
+                <form action="cadastro.php" method="post">
+                    <input type="text" name="name" id="name" placeholder="Nome..." > <br>
+                    <input type="email" name="email" id="email" placeholder="E-mail..."> <br>
+                    <input type="submit" value="Enviar >" id="submit">
+                </form>
+            </div>
+            <div class="img_hero">
+                <img src="77d0a7c454e658833800528e748edbe9.png" alt="#">
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

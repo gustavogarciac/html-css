@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* ALL MEDIA TYPES */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233EFF;
+}
+h1 {
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    padding: 10px;
+}

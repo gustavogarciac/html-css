@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* DEVICE BREAKPOINTS 
+Mobile - 360 / 768
+Tablets - 769 / 992
+L Devices - 993 / 1200
+XL Devices - 1201 +
+*/
+
+
+/* L DEVICES */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    nav#itens {
+        display: none;
+    }
+    span.material-icons {
+        display: none;
+    }
+    .hero {
+        flex-direction: row;
+    }
+    .img_hero {
+        width: 50vw;
+    }
+}

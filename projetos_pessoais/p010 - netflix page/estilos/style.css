@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+:root {
+    --heading-color: #fff;
+    --hero-bgcolor: rgba(0, 0, 0, 0.7);
+    --text-color: #b3b3b3;
+    --body-bgimg: linear-gradient(to bottom, rgba(0, 0, 0, 0.702), rgba(0, 0, 0, 0.702)), url('../assets/bg_netflix.jpg');
+    --respbody-bgcolor: #000000;
+    --switch-bgcolor: rgb(41, 41, 41);
+    --switch-border: none;
+}
+.light {
+    --heading-color: #000000;
+    --hero-bgcolor: rgba(255, 255, 255, 0.7);
+    --text-color: #363636;
+    --body-bgimg: linear-gradient(to bottom, rgba(255, 255, 255, 0.702), rgba(255, 255, 255, 0.702)), url('../assets/bg_netflix.jpg');
+    --respbody-bgcolor: #ffffff;
+    --switch-bgcolor: #fff;
+    --switch-border: 1px solid black;
+}
+
+@font-face {
+    font-family: NetflixSans;
+    src: url(../font/NetflixSans-Regular.otf);
+}
+
+@font-face {
+    font-family: NetflixSansBold;
+    src: url(../font/NetflixSans-Bold.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    letter-spacing: -1px;
+}
+
+body {
+    font-family: NetflixSans, Arial, Helvetica, sans-serif;
+    background-image: var(--body-bgimg);
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    padding: 20px 20px 20px 40px;
+}
+
+header div.logo img {
+    max-width: 150px;
+    max-height: 45px;
+}
+
+/* HERO SECTION */
+section.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    height: calc(100vh - 120px);
+}
+
+.container {
+    background-color: var(--hero-bgcolor);
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    color: var(--heading-color);
+
+    width: 500px;
+}
+
+.heading h1 {
+    font-size: 1.85em;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+input#email, input#senha {
+    width: 100%;
+    padding: 1em;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(41, 41, 41);
+    margin-bottom: 16px;
+}
+
+input#submit_bttn {
+    width: 100%;
+    font-size: 16px;
+    font-family: NetflixSansBold;
+    background-color: #e50914;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 1em;
+    margin-top: 15px;
+}
+
+input#submit_bttn:hover {
+    background-color: #b90710;
+    cursor: pointer;
+    transition: .3s;
+}
+
+div.rebme {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+div.rebme a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+div.rebme a:hover {
+    text-decoration: underline;
+}
+
+div.registerForm {
+    margin-bottom: 80px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.registerForm a {
+    color: var(--heading-color);
+    text-decoration: none;
+}
+
+div.registerForm a:hover {
+    text-decoration: underline;
+}
+
+div.recaptcha {
+    font-size: 14px;
+}
+
+div.recaptcha a {
+    color: rgb(12, 12, 236);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--hero-bgcolor);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+div.foot_container {
+    width: 60%;
+    color: var(--text-color);
+}
+
+div#foot_quest {
+    margin-bottom: 20px;
+}
+
+div#foot_quest a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+div#foot_quest a:hover {
+    text-decoration: underline;
+}
+
+div.links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+div.links ul li {
+    display: inline-block;
+    width: 250px;
+}
+
+div.links ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+div.links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* SWITCH */
+div.switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.switch button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--text-color);
+    background-color: var(--switch-bgcolor);
+    border: var(--switch-border);
+}
+
+div.switch button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: var(--respbody-bgcolor);
+        background-image: none;
+    }
+    footer {
+        border-top: 1px solid var(--text-color);
+    }
+}

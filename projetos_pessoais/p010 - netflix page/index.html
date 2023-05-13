@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Netflix</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.netflix.com/br/" target="_self" rel="external"><img src="assets/logo_netflix.png" alt="Logo Netflix"></a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="heading"><h1>Entrar</h1></div>
+            <div class="form">
+                <form action="login.php" method="post">
+                    <input type="email" name="email" id="email" required placeholder="Email ou número de telefone"> <br>
+                    <input type="password" name="senha" id="senha" required placeholder="Senha"> <br>
+                    <input type="submit" value="Entrar" id="submit_bttn">
+                </form>
+                <div class="rebme">
+                    <div class="remembercheck"><input type="checkbox" name="rememberMe" id="rememberMe"><label for="rememberMe"> Lembre-se de mim</label></div>
+                    <a href="#">Precisa de ajuda?</a>
+                </div>
+            </div>
+            <div class="registerForm">
+                <p>Novo por aqui? <a href="#">Assine agora.</a></p>
+                <div class="recaptcha">
+                    <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais.</a></p>
+                </div>
+            </div>
+            <div class="switch">
+                <button class="themecolor" onclick="changeColor()">
+                    <span class="material-symbols-outlined">radio_button_checked
+                    </span> Switch Theme Color
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot_container">
+            <div id="foot_quest">
+                <p>Dúvidas? Ligue <a href="#">0800 591 8942</a></p>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Perguntas frequentes</a></li>
+                    <li><a href="#">Preferências de cookies</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Informações corporativas</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function changeColor() {
+            const html = document.documentElement
+
+            if(html.classList.contains('light')) {
+                html.classList.remove('light')
+            } else {
+                html.classList.add('light')
+            }
+        }
+    </script>
+</body>
+</html>

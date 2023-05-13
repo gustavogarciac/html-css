@@ -11,4 +11,4 @@ Acesse os meus projetos abaixo:
 <p><a href="https://gustavogarciac.github.io/projeto-social/index.html" target="_blank">Redes Sociais</a></p>
 <p><a href="https://gustavogarciac.github.io/html-css/projetos_pessoais/p007%20-%20coffee%20shop/" target="_blank">Coffee Shop</a></p>
 <p><a href="https://gustavogarciac.github.io/projeto-tela-login/index.html" target="_blank">Tela de Login</p>
-<p><a href="https://gustavogarciac.github.io/html-css/projetos_pessoais/p010%20-%20netflix%20page/" target="_blank" rel="external"></a>Projeto Netflix</p>
+<p><a href="https://gustavogarciac.github.io/html-css/projetos_pessoais/p010%20-%20netflix%20page/" target="_blank" rel="external">Projeto Netflix</a></p>

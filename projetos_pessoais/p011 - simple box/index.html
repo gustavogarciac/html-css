@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Challenge iCanCode</title>
+</head>
+<body>
+    <section class="container">
+        <div class="order_success">
+            <p>ORDER SUCCESFULLY PLACED</p>
+        </div>
+        <p>Thank you for your order, you will receit it in <mark class="destaque">45 minutes.</mark></p>
+        <div class="info">
+            <p>Here we will deliver your order.</p>
+            <div class="item_info">
+                <span class="material-symbols-outlined">
+                    location_on
+                </span> <span>3711 Schults Meadow</span>
+            </div>
+            <div class="item_info">
+                <span class="material-symbols-outlined">
+                    phone_in_talk
+                </span> <span>60640582</span>
+            </div>
+            <div class="item_info">
+                <span class="material-symbols-outlined">
+                    mail
+                </span> <span>info@iCodethis.com</span>
+            </div>
+        </div>
+        <div id="obs"><span class="material-symbols-outlined">chat</span><q>No mushrooms, please</q>
+        </div>
+        <small>The payment of $69,420 will be taken from the courier when it arrives with your order.</small>
+        <div id="switch"><button class="switch" onclick="alterarTema()">Change Theme</button></div>
+    </section>
+
+    <script>
+        function alterarTema() {
+            const html = document.documentElement
+
+            if (html.classList.contains('light')) {
+                html.classList.remove('light')
+            } else {
+                html.classList.add('light')
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+:root {
+    --bg-color: #1E293B;
+    --info-color: #ABB5C1;
+    --container-bgcolor: #0F172A;
+    --success-color: #10B37E;
+    --sucess-bgcolor: #1E293B;
+    --white-color: #fff;
+}
+
+.light {
+    --bg-color: #bcc2c9;
+    --info-color: black;
+    --sucess-bgcolor: var(--container-bgcolor);
+    --white-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.5px;
+    transition: .25s;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--info-color);
+    font-family: 'Inter', sans-serif;
+}
+
+section.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: var(--container-bgcolor);
+    padding: 30px;
+}
+
+.order_success {
+    width: fit-content;
+    background-color: var(--sucess-bgcolor);
+    border: 1px solid var(--success-color);
+    border-radius: 15px;
+    color: var(--success-color);
+    padding: 5px 10px;
+    margin-bottom: 30px;
+}
+
+.container > p {
+    color: white;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+}
+
+p mark.destaque {
+    background-color: var(--bg-color);
+    font-weight: 700;
+    color: var(--white-color);
+    padding: 2px;
+}
+
+/* DADOS DO CLIENTE */
+div.info {
+    background-color: var(--bg-color);
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--info-color);
+}
+
+div.info > p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+div.item_info {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.9em;
+}
+
+div#obs {
+    margin-top: 15px;
+    background-color: var(--bg-color);
+    padding: 15px 20px;
+
+    display: flex;
+    gap: 7px;
+}
+
+div#obs q {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+small {
+    display: block;
+    margin-top: 30px;
+    font-size: 0.70em;
+    color: white;
+}
+
+/* Switch Button */
+#switch {
+    display: flex;
+    justify-content: center;
+}
+button.switch {
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    padding: 5px 10px;
+    color: var(--white-color);
+}
+
+button.switch:hover {
+    border: 1px solid var(--info-color);
+    cursor: pointer;
+    scale: 1.05;
+    transition: .5s;
+}
